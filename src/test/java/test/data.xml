@@ -1,0 +1,16 @@
+<object name="parent" class="test.Card">
+	<Integer name="id" value="5"/>
+	<String name="name" value="card1"/>
+	<array name="time" class="array:Long">
+	</array>
+	<array name="neighbours" class="array:test.Card">
+		<object name="item" class="test.Card">
+		</object>
+	</array>
+	<object name="parent" class="test.Pack">
+		<Long name="id" value="421"/>
+		<String name="name" value="pack card1"/>
+		<array name="cards" class="array:array:test.Card">
+		</array>
+	</object>
+</object>
