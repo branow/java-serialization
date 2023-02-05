@@ -1,16 +1,234 @@
-<object name="parent" class="test.Card">
-	<Integer name="id" value="5"/>
-	<String name="name" value="card1"/>
-	<array name="time" class="array:Long">
-	</array>
-	<array name="neighbours" class="array:test.Card">
-		<object name="item" class="test.Card">
-		</object>
-	</array>
-	<object name="parent" class="test.Pack">
-		<Long name="id" value="421"/>
-		<String name="name" value="pack card1"/>
+<array name="parent" class="array:test.Pack">
+	<object name="item" class="test.Pack">
+		<Long name="id" value="45"/>
+		<String name="name" value="pac/k1 r"/>
+		<array name="cards" class="array:array:test.Card">
+			<array name="item" class="array:test.Card">
+				<object name="item" class="test.Card">
+					<Integer name="id" value="5"/>
+					<String name="name" value="card1"/>
+					<array name="time" class="array:Long">
+					</array>
+					<array name="neighbours" class="array:test.Card">
+						<object name="item" class="test.Card">
+						</object>
+					</array>
+					<object name="parent" class="test.Pack">
+						<Long name="id" value="421"/>
+						<String name="name" value="pack card1"/>
+						<array name="cards" class="array:array:test.Card">
+						</array>
+					</object>
+				</object>
+			</array>
+		</array>
+	</object>
+	<object name="item" class="test.Pack">
+		<Long name="id" value="54325"/>
+		<String name="name" value="3241das "/>
+		<array name="cards" class="array:array:test.Card">
+			<array name="item" class="array:test.Card">
+				<object name="item" class="test.Card">
+					<Integer name="id" value="5"/>
+					<String name="name" value="card1"/>
+					<array name="time" class="array:Long">
+					</array>
+					<array name="neighbours" class="array:test.Card">
+						<object name="item" class="test.Card">
+						</object>
+					</array>
+					<object name="parent" class="test.Pack">
+						<Long name="id" value="421"/>
+						<String name="name" value="pack card1"/>
+						<array name="cards" class="array:array:test.Card">
+						</array>
+					</object>
+				</object>
+			</array>
+			<array name="item" class="array:test.Card">
+				<object name="item" class="test.Card">
+					<Integer name="id" value="5"/>
+					<String name="name" value="card1"/>
+					<array name="time" class="array:Long">
+					</array>
+					<array name="neighbours" class="array:test.Card">
+						<object name="item" class="test.Card">
+						</object>
+					</array>
+					<object name="parent" class="test.Pack">
+						<Long name="id" value="421"/>
+						<String name="name" value="pack card1"/>
+						<array name="cards" class="array:array:test.Card">
+						</array>
+					</object>
+				</object>
+				<object name="item" class="test.Card">
+					<Integer name="id" value="78"/>
+					<String name="name" value="card2"/>
+					<array name="time" class="array:Long">
+						<Long name="item" value="56412"/>
+					</array>
+					<array name="neighbours" class="array:test.Card">
+						<object name="item" class="test.Card">
+						</object>
+						<object name="item" class="test.Card">
+							<Integer name="id" value="5"/>
+							<String name="name" value="card1"/>
+							<array name="time" class="array:Long">
+							</array>
+							<array name="neighbours" class="array:test.Card">
+								<object name="item" class="test.Card">
+								</object>
+							</array>
+							<object name="parent" class="test.Pack">
+								<Long name="id" value="421"/>
+								<String name="name" value="pack card1"/>
+								<array name="cards" class="array:array:test.Card">
+								</array>
+							</object>
+						</object>
+					</array>
+					<object name="parent" class="test.Pack">
+						<Long name="id" value="12"/>
+						<String name="name" value="pack card2"/>
+						<array name="cards" class="array:array:test.Card">
+							<array name="item" class="array:test.Card">
+								<object name="item" class="test.Card">
+									<Integer name="id" value="5"/>
+									<String name="name" value="card1"/>
+									<array name="time" class="array:Long">
+									</array>
+									<array name="neighbours" class="array:test.Card">
+										<object name="item" class="test.Card">
+										</object>
+									</array>
+									<object name="parent" class="test.Pack">
+										<Long name="id" value="421"/>
+										<String name="name" value="pack card1"/>
+										<array name="cards" class="array:array:test.Card">
+										</array>
+									</object>
+								</object>
+							</array>
+						</array>
+					</object>
+				</object>
+			</array>
+		</array>
+	</object>
+	<object name="item" class="test.Pack">
+		<Long name="id" value="5432534"/>
+		<String name="name" value="   675"/>
+		<array name="cards" class="array:array:test.Card">
+			<array name="item" class="array:test.Card">
+			</array>
+			<array name="item" class="array:test.Card">
+				<object name="item" class="test.Card">
+					<Integer name="id" value="1"/>
+					<String name="name" value="card4"/>
+					<array name="time" class="array:Long">
+						<Long name="item" value="9841654"/>
+						<Long name="item" value="561154"/>
+					</array>
+					<array name="neighbours" class="array:test.Card">
+					</array>
+					<object name="parent" class="test.Pack">
+						<Long name="id" value="341"/>
+						<String name="name" value="pack card- ---{}]][*4"/>
+						<array name="cards" class="array:array:test.Card">
+							<array name="item" class="array:test.Card">
+								<object name="item" class="test.Card">
+									<Integer name="id" value="0"/>
+									<String name="name" value="card3"/>
+									<array name="neighbours" class="array:test.Card">
+									</array>
+									<object name="parent" class="test.Pack">
+										<Long name="id" value="33"/>
+										<String name="name" value="pack card13 )"/>
+									</object>
+								</object>
+								<object name="item" class="test.Card">
+									<Integer name="id" value="0"/>
+									<String name="name" value="card3"/>
+									<array name="neighbours" class="array:test.Card">
+									</array>
+									<object name="parent" class="test.Pack">
+										<Long name="id" value="33"/>
+										<String name="name" value="pack card13 )"/>
+									</object>
+								</object>
+							</array>
+						</array>
+					</object>
+				</object>
+				<object name="item" class="test.Card">
+					<Integer name="id" value="0"/>
+					<String name="name" value="card3"/>
+					<array name="neighbours" class="array:test.Card">
+					</array>
+					<object name="parent" class="test.Pack">
+						<Long name="id" value="33"/>
+						<String name="name" value="pack card13 )"/>
+					</object>
+				</object>
+				<object name="item" class="test.Card">
+					<Integer name="id" value="-89"/>
+					<String name="name" value="card5"/>
+					<array name="time" class="array:Long">
+						<Long name="item" value="894651"/>
+					</array>
+					<array name="neighbours" class="array:test.Card">
+						<object name="item" class="test.Card">
+							<Integer name="id" value="0"/>
+							<String name="name" value="card3"/>
+							<array name="neighbours" class="array:test.Card">
+							</array>
+							<object name="parent" class="test.Pack">
+								<Long name="id" value="33"/>
+								<String name="name" value="pack card13 )"/>
+							</object>
+						</object>
+						<object name="item" class="test.Card">
+							<Integer name="id" value="0"/>
+							<String name="name" value="card3"/>
+							<array name="neighbours" class="array:test.Card">
+							</array>
+							<object name="parent" class="test.Pack">
+								<Long name="id" value="33"/>
+								<String name="name" value="pack card13 )"/>
+							</object>
+						</object>
+					</array>
+					<object name="parent" class="test.Pack">
+						<Long name="id" value="43"/>
+						<String name="name" value="pack card1     "/>
+					</object>
+				</object>
+			</array>
+			<array name="item" class="array:test.Card">
+				<object name="item" class="test.Card">
+					<Integer name="id" value="5"/>
+					<String name="name" value="card1"/>
+					<array name="time" class="array:Long">
+					</array>
+					<array name="neighbours" class="array:test.Card">
+						<object name="item" class="test.Card">
+						</object>
+					</array>
+					<object name="parent" class="test.Pack">
+						<Long name="id" value="421"/>
+						<String name="name" value="pack card1"/>
+						<array name="cards" class="array:array:test.Card">
+						</array>
+					</object>
+				</object>
+			</array>
+		</array>
+	</object>
+	<object name="item" class="test.Pack">
+		<Long name="id" value="44"/>
+		<String name="name" value="p|⨻"/>
 		<array name="cards" class="array:array:test.Card">
 		</array>
 	</object>
-</object>
+</array>

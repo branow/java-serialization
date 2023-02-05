@@ -20,11 +20,6 @@ public class Property {
     public Property(String name, String value) throws IllegalArgumentException {
         this.name = name;
         this.value = value;
-        if (!validate(value)) throw new IllegalArgumentException("value can't contains chars '\\n' '=' '/'");
-    }
-
-    private boolean validate(String value) {
-        return !value.contains("\"") && !value.contains("=");
     }
 
     public String getName() {

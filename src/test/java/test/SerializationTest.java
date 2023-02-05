@@ -25,7 +25,6 @@ public class SerializationTest {
         for (int i=0; i<expected.length; i++) {
             Assert.assertEquals(expected[i], actual[i]);
         }
-
     }
 
     @Test
@@ -63,7 +62,7 @@ public class SerializationTest {
 
 
     private Pack[] getPacks() {
-        return new Pack[] { new Pack(45, "pack1 r", getCardsMat(0)),
+        return new Pack[] { new Pack(45, "pac/k1 r", getCardsMat(0)),
                             new Pack(54325, "3241das ", getCardsMat(1)),
                             new Pack(5432534, "   675", getCardsMat(2)),
                             new Pack(44, "p|\n", getCardsMat(3))};

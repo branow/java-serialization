@@ -96,7 +96,7 @@ public class Decoder {
             throws ClassNotFoundException, InstantiationException,
             IllegalAccessException, NoSuchMethodException, InvocationTargetException {
         if (code.contains("</object>") || code.contains("</array>")) return null;
-        Property[] properties = decodeProperties(code.substring(0, code.length()-1));
+        Property[] properties = decodeProperties(code);
         String name = getName(properties).getValue();
 
         return decodeTeg(code, properties, name);
@@ -104,7 +104,7 @@ public class Decoder {
 
     private Property[] decodeProperties(String code) {
         code = code.replaceFirst("[ \t\r\n]*<[A-z]+ ", "");
-        code = code.replaceFirst("[/>]", "");
+        code = code.replaceAll("(/>)|(>)", "");
         String[] prop = splitTeg(code);
         Property[] properties = new Property[prop.length];
         for (int i=0; i<properties.length; i++) {
@@ -130,10 +130,13 @@ public class Decoder {
         return prop.toArray(String[]::new);
     }
 
-    private Property decodeProperty(String code) {
-        String[] strings = code.split("=");
-        if (strings.length < 2) return null;
-        return new Property(strings[0], strings[1].replaceAll("\"", ""));
+    private Property decodeProperty(String property) {
+        property = property.replaceAll("\n", "");
+        int index = property.indexOf("=");
+        if (index < 0) return null;
+        String name = property.substring(0, index);
+        String value = property.substring(index+1).replaceAll("\"", "");
+        return new Property(name, value);
     }
 
     private ObjectType decodeTeg(String code, Property[] properties, String name) throws ClassNotFoundException, InvocationTargetException,
